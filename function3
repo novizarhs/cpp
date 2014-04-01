@@ -1,0 +1,21 @@
+//function3_variable_eksternal
+
+#include <iostream.h>
+
+int oblada = 550; //variabel eksternal
+void tambah(); //prototipe fungsi
+
+int main()
+{
+    cout<< oblada << endl;
+
+    tambah();
+    cout << oblada<<endl;
+
+    tambah();
+    cout << oblada<<endl;
+}
+    void tambah() //definisi fungsi
+    {
+        oblada++; //variabel eksternal dinaikkan
+    }
