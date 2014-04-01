@@ -1,0 +1,15 @@
+//function6_operator_lingkup
+
+#include <iostream>
+
+int x = 50; //variabel eksternal
+
+int main()
+{
+    double x; //definisi variabel lokal
+    x = 5.678901234; // variabel lokal yg diberi nilai
+
+    cout<<x<<" " <<::x<<endl;
+    ::x= 77; //variabel eksternalyg diberi nilai
+    cout<<x<< " "<<::x<<endl;
+}
