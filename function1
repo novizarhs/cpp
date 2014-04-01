@@ -1,0 +1,30 @@
+//function1
+
+#include <iostream.h>
+#include <iomanip.h>
+
+
+long kuadrat (long l); //prototipe fungsi
+double max (double x, double y); //prototipe
+
+int main()
+{
+    for (long bil=200; bil < 2000; bil+=200)
+    cout<< setw(8) << bil
+    <<setw(8)<<kuadrat(bil)<<endl;
+    
+    cout<<max(65789,123)<<endl;
+    cout<<max(123, 65789)<<endl;
+}
+long kuadrat(long l) //definisi fungsi
+    {
+        return(l*l);
+    }
+    double max(double x, double y)
+    {
+        if (x>y)
+        return(x);
+            
+        else
+        return(y);
+    }
