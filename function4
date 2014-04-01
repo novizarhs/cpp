@@ -1,0 +1,19 @@
+//function4_variable_sama
+
+#include <iostream>
+
+int fernando = 55; //variabel ekssternal
+void bravo();
+int main()
+{
+    cout<<"main () : fernando = "<<fernando<< endl;
+    bravo();
+    cout<<"main () : fernando = "<<fernando<< endl;
+}
+
+void bravo()
+{
+    int fernando; // variabel lokal
+    fernando = 77;
+    cout<< "bravo() : fernando = "<<fernando<< endl;
+}
